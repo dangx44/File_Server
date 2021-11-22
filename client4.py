@@ -1,4 +1,5 @@
 import socket
+import sys
 
 HOST = '127.0.0.1'
 PORT = 65432
@@ -7,11 +8,12 @@ FORMAT = "utf-8"
 SIZE = 1024
 
 def upld():
+    file_name = input("Enter filename: " )
     #Open & read file
-    f = open("data/data.txt", "r")
+    f = open("data/" + file_name, "r")
     data = f.read()
     #Send filename to Server
-    client.send("data.txt".encode(FORMAT))
+    client.send(file_name.encode(FORMAT))
     msg = client.recv(SIZE).decode(FORMAT)
     print(f"[SERVER]: {msg}")
     #Send file data to Server
