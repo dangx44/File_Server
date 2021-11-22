@@ -2,5 +2,6 @@
 
 3 functions to upload a file, download a file and list all files in Server.
 Application works with User input in prompt.
-In meantime it uploads a hardcoded file to the Server and when sending a request to download a file the Server receives the filename request.
+In meantime it uploads a hardcoded file to the Server(Fixed after 2nd commit, now excepts filenames from User).  
+When sending a request to download a file the Server receives the filename request.
 List all files function doesn't work yet
