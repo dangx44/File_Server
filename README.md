@@ -1,8 +1,13 @@
 # File_Server
 
-3 functions to upload a file, download a file and list all files in Server.
-Application works with User input in prompt.
-In meantime it uploads a hardcoded file to the Server(Fixed after 2nd commit, now excepts filenames from User).  
-When sending a request to download a file the Server receives the filename request.
-List all files function doesn't work yet
-Last Commit to Server.py was trying to send a file to the client before putting the code into a function.
+TCP connection between Server and Client.
+
+3 Main functions: 1.Upload files
+                  2.Download files
+                  3.List availabel files on server
+
+Also added fuctions: 1.Help: displays commands
+                     2.Delete
+                     3.Logout
+
+Supports multithreading: More than 1 client can connect to Server at same time.                   
